@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  /* Neutral Colors */
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: var(--almost-white);
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 7.84rem;
+  font-weight: 700;
+  margin-bottom: 4.72rem;
+  letter-spacing: -.16rem;
+  color: var(--almost-black);
+}
+p,
+li {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--medium-gray);
+  list-style-type: none;
+
+}
+li {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+}
+
+
+
+.outer-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.inner-container {
+  width: 100%;
+  max-width: 1440px;
+
+  height: 900px;
+  padding: 21px 2.77%;
+}
+.mask{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: var(--almost-white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  min-height: 100dvh;
+  width: 70%;
+  display: none;
+  padding: 0 3.5rem;
+}
+.mask.show{
+  display: block;
+}

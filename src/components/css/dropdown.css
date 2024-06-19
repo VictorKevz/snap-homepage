@@ -1,0 +1,39 @@
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+.list-name{
+    position: relative;
+    
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-50%);
+    background-color: var(--almost-white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 2.5rem;
+    min-width: max-content;
+    z-index: 1000;   
+    padding: 2.3rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+.drop-down-item{
+    display: flex;
+    gap: 1.3rem;
+}
+.list-name + .list-name .dropdown {
+    left: calc(50% + 20px);
+}
+.list-name:hover{
+    font-weight: 400;
+    color: var(--almost-black);
+    transition: transform 0.3s ease;
+
+}
